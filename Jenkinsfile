@@ -32,7 +32,7 @@ pipeline
            sh 'java -jar /var/lib/jenkins/workspace/decsam1/testing.jar'
          }
      }
-     stage('CONTINOUS DELIVERY')
+     stage('CONTINOUS DELLIVERY')
      {
          steps
          {
