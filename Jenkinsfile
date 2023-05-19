@@ -17,7 +17,7 @@ pipeline
              sh 'mvn package'
          }
      }
-          stage('CONTINOUS DEPLOYMENT')
+          stage('CONTINOUS DEPLOYMETNT')
      {
          steps
          {
