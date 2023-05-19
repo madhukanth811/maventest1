@@ -21,8 +21,8 @@ pipeline
      {
          steps
          {
-             deploy adapters: [tomcat9(credentialsId: '2679f672-cf04-4c01-8265-bf657e86db6b', path: '', url: 'http://172.31.4.248:8080')], contextPath: 'testapp', war: '**/*.war'
-         }
+             sh 'scp /var/lib/jenkins/workspace/decsam1/webapp/target/webapp.war ubuntu@172.31.4.248:/var/lib/tomcat9/webapps/testapp.war'
+         } 
      }
           stage('CONTINOUS TESTING')
      {
